@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap" rel="stylesheet">
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="images/logo2.png">
     <style>
         body {
             background-image: url('images/image2.svg');
@@ -25,8 +26,25 @@
             font-family: 'Baloo Bhaina 2', cursive;
             color: white;
         }
+
+        input[type=text] {
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        input[type=text]:focus {
+            background-color: lightblue;
+        }
+
+        input[type=button] {
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
     </style>
-    <link rel="icon" type="image/png" href="images/icon.png">
 </head>
 
 <body>
@@ -34,15 +52,22 @@
 
     <div class="jumbotron" style="background: none;">
         <div class="container text-center">
-            <h1>My Portfolio</h1>
-            <p>Some text that represents "Me"...</p>
+
+            <h1 style="margin-top: 100px;">GitGet</h1>
+            <p>Display Github account info with GitGet </p>
+            <img src="images/logo2.png" alt="GitGet logo" style="width: 100px;"><br><br>
+            <input type="text" id="txt" placeholder="Enter username">
+            <input type="button" id="btn" value="GitGet User" class="btn btn-primary">
+            <p id="emptyText"></p>
         </div>
     </div>
 
-    <div class="jumbotron" style="background: none;">
+    <!-- <div class="jumbotron" style="background: none;">
         <div class="container text-center">
-            <h1>My Portfolio</h1>
-            <p>Some text that represents "Me"...</p>
+
+            <input type="text" id="txt"><br><br>
+            <input type="button" id="btn" value="search" class="btn btn-info">
+            <p id="emptyText"></p>
         </div>
     </div>
 
@@ -50,7 +75,7 @@
 
     </div>
 
-
+-->
 
     <!-- <div class="center">
         <h1 style="font-size: 3em;">Welcome to<br> GitGet</h1>
