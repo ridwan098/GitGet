@@ -13,18 +13,32 @@ const fecthUsers = async (user) => {
     return {
         data
     }
+
+
+    // .then(response => response.json())
+    //     .then(data => console.log('data is', data))
+    //     .catch(error => console.log('error is', error));
 }
 
 const showData = () => {
     fecthUsers(text.value).then((res) => {
         console.log(res);
+        console.log(res.data);
         var info = JSON.stringify(res);
-        console.log("look here: " + info);
-        for (var i of info) {
-            console.log(i);
 
+
+
+        if (res.data.message == "Not Found") {
+            detail.innerHTML = "User Not Found";
+        } else {
+            console.log("look here: " + info);
+            // for (var i of info) {
+            //     console.log(i);
+
+            // }
+            detail.innerHTML = info;
         }
-        detail.innerHTML = info;
+
 
 
     })
@@ -32,6 +46,6 @@ const showData = () => {
 btn.addEventListener("click", (e) => {
     e.preventDefault();
     showData();
-    console.log(text.value)
-    console.log("Hello");
+
+
 })
