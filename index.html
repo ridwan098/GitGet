@@ -4,63 +4,46 @@
 <head>
     <title>GitGet</title>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap" rel="stylesheet" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/png" href="images/logo.png">
-    <style>
-        body {
-            background-image: url('images/image2.svg');
-            background-repeat: repeat-x repeat-y;
-            background-position: 100%;
-            background-position-x: 100%;
-            background-position-y: center;
-            max-width: 1500px;
-            margin: 0 auto;
-            padding: 0 50px;
-            font-family: 'Baloo Bhaina 2', cursive;
-            color: white;
-        }
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link type="text/css" rel="stylesheet" href="css/styles.css" />
 
-        input[type=text] {
-            width: 50%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            box-sizing: border-box;
-        }
 
-        input[type=text]:focus {
-            background-color: lightblue;
-        }
 
-        input[type=button] {
-            width: 50%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            box-sizing: border-box;
-        }
-    </style>
 </head>
 
 <body>
 
+    <!-- <marquee>
+        <h2><em>thanks for 41+ likes!!</em> </h2>
+    </marquee> -->
 
-    <div class="jumbotron" style="background: none;">
+
+
+    <a href="pages/display.html">Next</a>
+    <div class="jumbotron" style="background: none; margin-top: 50px; margin-bottom: 80px;">
         <div class="container text-center">
 
-            <h1 style="margin-top: 80px;">GitGet</h1>
+            <h1>GitGet</h1>
             <p>Display Github account info with GitGet </p>
             <img src="images/logo.png" alt="GitGet logo" style="width: 100px;"><br><br>
-            <input type="text" id="txt" placeholder="Enter username">
-            <input type="button" id="btn" value="GitGet User" class="btn btn-primary">
+            <form id="form">
+
+                <input type="text" id="txt" placeholder="Enter username" required>
+                <input type="submit" id="btn" value="GitGet User" class="btn btn-primary" />
+            </form>
             <p id="emptyText"></p>
         </div>
     </div>
+
+
 
     <!-- <div class="jumbotron" style="background: none;">
         <div class="container text-center">
@@ -97,7 +80,7 @@
         <div class="container">
             <div class="row">
                 <!-- Footer Location-->
-                <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="col-lg-3 mb-4 mb-lg-0">
                     <h4 class="text-uppercase mb-4">Github Repo</h4>
                     <p class="lead mb-0">Checkout on <a target="_blank" href="https://github.com/ridwan098/GitGet"
                             style="text-decoration: none;">Github</a> <br />
@@ -106,7 +89,7 @@
 
 
                 <!-- Footer Social Icons-->
-                <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="col-lg-3 mb-4 mb-lg-0">
                     <h4 class="text-uppercase mb-4">Around the Web</h4>
                     <a class="btn btn-outline-light btn-social mx-1" href="mailto:ridwanishola97@gmail.com"><i
                             class="fab fa-fw  fas fa-envelope-open-text"></i>
@@ -118,14 +101,15 @@
                         href="https://www.linkedin.com/in/ridwan-ishola-117033189/" target="_blank"><i
                             class="fab fa-fw fa-linkedin-in"></i>
                     </a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#"><i class="fab fa-fw fa-dribbble"
+                    <a class="btn btn-outline-light btn-social mx-1" href="#"><i class="fab fa-fw fa-code-wars"
                             target="_blank"></i>
                     </a>
+
                 </div>
 
 
                 <!-- Footer about ko-fi Icons-->
-                <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="col-lg-3 mb-4 mb-lg-0">
                     <h4 class="text-uppercase mb-4">Buy Me A ko-fi</h4>
                     <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
                     <script type='text/javascript'>
@@ -134,6 +118,18 @@
                     </script>
                 </div>
 
+
+                <!-- Footer about sharing site-->
+                <div class="col-lg-3 mb-4 mb-lg-0 ">
+                    <h4 class="text-uppercase mb-4">Share Page</h4>
+                    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                    <script type="text/javascript"
+                        src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5eb5ecac59028179"></script>
+
+                    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                    <div class="addthis_inline_share_toolbox"></div>
+
+                </div>
 
 
 
@@ -152,6 +148,8 @@
 
 
     <script type="text/javascript" src="js/app.js"></script>
+
+
 </body>
 
 </html>
