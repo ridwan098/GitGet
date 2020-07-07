@@ -8,8 +8,7 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            client_id: " Iv1.28dec2a34b9057bb",
-            client_secret: "12f8f940a393cf7789b56a763b145c74f5ddb760",
+
             userInfo: null
         }
     }
@@ -19,7 +18,7 @@ class App extends Component {
     getUser = (e) => {
         e.preventDefault();
         const user = e.target.elements.userName.value;
-        Axios.get(`https://api.github.com/users/${user}?client_id=${this.state.client_id}&client_secret=${this.state.client_secret}`)
+        Axios.get(`https://api.github.com/users/${user}`)
             .then((res) => {
                 this.setState({
                     ...this.state,
@@ -38,6 +37,7 @@ class App extends Component {
 
     componentDidUpdate() {
         console.log('yes updated')
+        console.log(this.state)
     }
 
 
