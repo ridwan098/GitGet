@@ -51,7 +51,7 @@ class App extends Component {
                 <Form getUser={this.getUser} />
                 {detail}
                 {/* {this.state.userInfo ? (
-                    { userInfo }
+                    <p>{detail}</p>
                 ) : (<p>Please enter a username</p>
                     )} */}
             </div >
